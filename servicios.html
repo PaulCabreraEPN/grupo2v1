@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-950 border-gray-200 dark:bg-gray-900 mb-3">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <img src="img/logo.jpg" alt="Logo" width="120">
+          <span class="self-center text-xl font-semibold whitespace-nowrap text-sky-400">CURSOS DE COMPUTACIÓN</span>
+          <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="text-white hover:text-gray-300">Inicio</a>
+            <a href="galeria.html" class="text-white hover:text-gray-300">Cursos</a>
+            <a href="#" class="text-white hover:text-gray-300">Ofertas</a>
+            <a href="servicios.html" class="text-white hover:text-gray-300">Servicios</a>
+            <a href="cuestionario.html" class="text-white hover:text-gray-300">Contacto</a>
+          </div>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:hidden" id="navbar-default">
+          <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Inicio</a>
+          <a href="galeria.html" class="block py-2 px-3 text-white hover:bg-gray-700">Cursos</a>
+          <a href="#" class="block py-2 px-3 text-white hover:bg-gray-700">Ofertas</a>
+          <a href="servicios.html" class="block py-2 px-3 text-white hover:bg-gray-700">Servicios</a>
+          <a href="cuestionario.html" class="block py-2 px-3 text-white hover:bg-gray-700">Contacto</a>
+        </div>
+  </nav>
+    <div class="wrapper w-5/6 mx-auto mt-10">
+        <h1 class="text-3xl font-bold mb-5 text-center">SERVICIOS</h1>
+        <div class="tab bg-white px-5 py-3 shadow-lg rounded-md">
+            <div class="flex items-center cursor-pointer text-lg font-semibold" onclick="toggleAnswer(this)">
+                <h2>1. Cursos Online</h2>
+            </div>
+            <div class="answer mt-3 hidden">
+                <ul class="list-disc ml-5">
+                    <li>Programación (Python, C++, Java)</li>
+                    <li>Desarrollo Web (HTML, CSS, JavaScript, frameworks)</li>
+                    <li>Bases de Datos (SQL, NoSQL)</li>
+                    <li>Redes y Sistemas Operativos</li>
+                    <li>Diseño Gráfico y UX/UI</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab bg-white px-5 py-3 shadow-lg rounded-md mt-4">
+            <div class="flex items-center cursor-pointer text-lg font-semibold" onclick="toggleAnswer(this)">
+                <h2>2. Certificados</h2>
+            </div>
+            <div class="answer mt-3 hidden">
+                <ul class="list-disc ml-5">
+                    <li>Certificados de finalización del curso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab bg-white px-5 py-3 shadow-lg rounded-md mt-4">
+            <div class="flex items-center cursor-pointer text-lg font-semibold" onclick="toggleAnswer(this)">
+                <h2>3. Asesoramiento</h2>
+            </div>
+            <div class="answer mt-3 hidden">
+                <ul class="list-disc ml-5">
+                    <li>Tutorías personalizadas</li>
+                    <li>Asesoramiento durante el curso completo, hasta un día antes del examen</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab bg-white px-5 py-3 shadow-lg rounded-md mt-4">
+            <div class="flex items-center cursor-pointer text-lg font-semibold" onclick="toggleAnswer(this)">
+                <h2>4. Ofertas</h2>
+            </div>
+            <div class="answer mt-3 hidden">
+                <ul class="list-disc ml-5">
+                    <li>Descuentos para estudiantes de la EPN</li>
+                    <li>Ofertas especiales si son grupo de 4 personas</li>
+                    <li>Ofertas especiales por temporadas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            answer.classList.toggle('hidden');
+        }
+    </script>
+    <script>
+        document.querySelector('[data-collapse-toggle="navbar-default"]').addEventListener('click', function() {
+          var navbar = document.getElementById('navbar-default');
+          navbar.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

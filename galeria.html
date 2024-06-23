@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-blue-950 border-gray-200 dark:bg-gray-900 mb-3">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <img src="img/logo.jpg" alt="Logo" width="120">
+          <span class="self-center text-xl font-semibold whitespace-nowrap text-sky-400">CURSOS DE COMPUTACIÓN</span>
+          <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="text-white hover:text-gray-300">Inicio</a>
+            <a href="galeria.html" class="text-white hover:text-gray-300">Cursos</a>
+            <a href="#" class="text-white hover:text-gray-300">Ofertas</a>
+            <a href="servicios.html" class="text-white hover:text-gray-300">Servicios</a>
+            <a href="cuestionario.html" class="text-white hover:text-gray-300">Contacto</a>
+          </div>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:hidden" id="navbar-default">
+          <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Inicio</a>
+          <a href="galeria.html" class="block py-2 px-3 text-white hover:bg-gray-700">Cursos</a>
+          <a href="#" class="block py-2 px-3 text-white hover:bg-gray-700">Ofertas</a>
+          <a href="servicios.html" class="block py-2 px-3 text-white hover:bg-gray-700">Servicios</a>
+          <a href="cuestionario.html" class="block py-2 px-3 text-white hover:bg-gray-700">Contacto</a>
+        </div>
+    </nav>
+    <div class="container mx-auto px-4 bg-sky-100">
+        <div class="grid gap-2 lg:grid-rows-2 lg:grid-cols-4 md:grid-cols-2 md:grid-rows-4">
+            <div>
+                <img class="border-4 border-sky-800/100 mt-4" src="imagenes/imagen1.jpg" alt="" width="470" height="500">
+            </div>
+            <div>
+                <img class="border-4 border-sky-800/100 mt-4" src="imagenes/imagen2.jpg" alt="" width="500" height="500" >
+            </div>
+            <div>
+                <img class="border-4 border-sky-800/100 mt-4" src="imagenes/imgen4.png" alt="" width="600" height="600">
+            </div>
+            <div>
+                <img class="border-4 border-sky-800/100 mt-4" src="imagenes/imagen4.jpg" alt="" width="500" height="500">
+            </div>
+            <div>
+                <img class="border-4 border-sky-800/100 mt-4" src="imagenes/imagen5.jpg" alt="" width="500" height="500">
+            </div>
+            <div>
+                <img class="border-4 border-sky-800/100 mt-4" src="imagenes/imagen6.jpg" alt="" width="500" height="500">
+            </div>
+            <div>
+                <img class="border-4 border-sky-800/100 mt-4" src="imagenes/imagen7.jpg" alt="" width="500" height="500">
+            </div>
+            <div>
+                <img class="border-4 border-sky-800/100 mt-4" src="imagenes/imagen8.jpg" width="500" height="500">
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 mt-5 bg-gray-100">
+        <img src="iconos/account_avatar_face_man_people_profile_user_icon_123197.ico" alt="" width="50"> 
+        <p class="text-xs">Nombre usuario</p>
+        <label for="comentario" class="form-label">Comentario</label><br>
+        <input type="text" class="form-control h-24 w-full border-4 border-gray-300 text-sm" id="comentario" placeholder="Coloque su comentario respecto a los cursos brindados">
+    </div>
+    <div class="container mx-auto px-4 mt-5">
+        <div class="grid lg:grid-rows-1 lg:grid-cols-2 gap-2 md:grid-cols-1 md:grid-rows-2">
+            <div>
+                <p class="text-center text-lg bg-sky-200"><b>Visión</b></p>
+                <p class="bg-sky-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officia repellat nobis harum reiciendis nemo architecto ratione at ex odit non ab obcaecati blanditiis quas, consequatur nostrum quisquam quod aut, beatae facere! Dolorum, nobis! Nostrum eum corrupti aut ratione ex aliquid nihil non, fugiat asperiores.</p>
+            </div>
+            <div>
+                <h1 class="text-center text-lg bg-sky-200"><b>Mision</b></h1>
+                <p class="bg-sky-100">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero vel excepturi quisquam consectetur, nobis maxime laboriosam aliquam atque officia. Modi nisi dolore cum adipisci porro sequi quasi quo doloribus fugiat sed! Tempore, facere quidem officiis repellendus eius mollitia cumque, earum, in debitis quam ullam rem?</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('[data-collapse-toggle="navbar-default"]').addEventListener('click', function() {
+          var navbar = document.getElementById('navbar-default');
+          navbar.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

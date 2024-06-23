@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMPE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/mi_estilo.css">
+    
+
+</head>
+<body >
+    <nav class="bg-blue-950 border-gray-200 dark:bg-gray-900 mb-3">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <img src="img/logo.jpg" alt="Logo" width="120">
+          <span class="self-center text-xl font-semibold whitespace-nowrap text-sky-400">CURSOS DE COMPUTACIÓN</span>
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-white hover:text-gray-300">Inicio</a>
+            <a href="galeria.html" class="text-white hover:text-gray-300">Cursos</a>
+            <a href="#" class="text-white hover:text-gray-300">Ofertas</a>
+            <a href="servicios.html" class="text-white hover:text-gray-300">Servicios</a>
+            <a href="cuestionario.html" class="text-white hover:text-gray-300">Contacto</a>
+          </div>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:hidden" id="navbar-default">
+          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Inicio</a>
+          <a href="galeria.html" class="block py-2 px-3 text-white hover:bg-gray-700">Cursos</a>
+          <a href="#" class="block py-2 px-3 text-white hover:bg-gray-700">Ofertas</a>
+          <a href="servicios.html" class="block py-2 px-3 text-white hover:bg-gray-700">Servicios</a>
+          <a href="cuestionario.html" class="block py-2 px-3 text-white hover:bg-gray-700">Contacto</a>
+        </div>
+  </nav>
+
+  <div class="bg-gray flex flex-col items-center justify-center ">
+        <div class="relative max-w-5xl overflow-hidden" style="height: auto">
+            <div id="slide1" class="carousel-item flex-none w-full">
+              <div class="carousel">
+                <div class="slider-item flex-none w-full">
+                  <img src="imagenes/Slider1.jpg" alt="Slide 1" class="w-full">
+                </div>
+                <div id="slide2" class="slider-item flex-none w-full">
+                  <img src="imagenes/Slider2.jpg" alt="Slide 2" class="w-full">
+                </div>
+                <div id="slide3" class="slider-item flex-none w-full">
+                  <img src="imagenes/Slider3.jpg" alt="Slide 3" class="w-full">
+                </div>
+              </div>
+            </div>
+            <a href="#slide3" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2"><b> < </b></a>
+            <a href="#slide2" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2"><b> > </b></a>
+        </div>
+        <b>
+            <p></p>
+            <h1 class="text-3xl">Cursos</h1>
+        </b>
+    </div>
+    
+
+    <div class="grid gap-2 lg:grid-rows-2 lg:grid-cols-4 md:grid-cols-3 md:grid-rows-2 m-4">
+        <div class="border border-gray-300 p-4 text-center"> <a href=""><img src="img/mujer-alegre-estudiando-internet-viendo-seminarios-web-computadora-tomando-curso-linea-ilustracion-dibujos-animados_74855-14313.avif" alt="">Streaming en la educación a distancia </a><br><button class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-2">Inscribirse</button></div>
+        <div class="border border-gray-300 p-4 text-center"> <a href=""><img src="img/curso-dibujo-distancia-artista-femenina-mujer-pantalla-computadora-lapiz-ilustracion-vectorial-plana-clase-magistral-arte-linea-concepto-pasatiempo-banner-diseno-sitio-web-o-pagina-web-dest.avif" alt="">Diseña contenidos educativos con inteligencia artifical en microsoft designer</a><br><button class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-3">Inscribirse</button></div>
+        <div class="border border-gray-300 p-4 text-center"><a href=""><img src="img/computacion-curso.webp" alt="">Ciudadania digital y su aporte en la educación</a><br><button class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-3">Inscribirse</button></div>
+        <div class="border border-gray-300 p-4 text-center"><a href=""><img src="img/mujer-alegre-estudiando-internet-viendo-seminarios-web-computadora-tomando-curso-linea-ilustracion-dibujos-animados_74855-14313.avif" alt="">Streaming en la educación a distancia II </a><br><button class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-3">Inscribirse</button></div>
+        <div class="border border-gray-300 p-4 text-center"><a href=""><img src="img/curso-dibujo-distancia-artista-femenina-mujer-pantalla-computadora-lapiz-ilustracion-vectorial-plana-clase-magistral-arte-linea-concepto-pasatiempo-banner-diseno-sitio-web-o-pagina-web-dest.avif" alt="">Diseña contenidos educativos con inteligencia artifical en microsoft designer II</a><br><button class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-3">Inscribirse</button></div>
+        <div class="border border-gray-300 p-4 text-center"><a href=""><img src="img/computacion-curso.webp" alt="">Ciudadania digital y su aporte en la educación</a><br><button class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-3">Inscribirse</button></div>
+    </div>
+
+    <footer class="text-gray-100 bg-gray-800 mt-3 p-2">
+        <div class="max-w-3xl mx-auto py-6">
+            <h1 class="text-center text-lg lg: text-2xl">
+                ¡Bienvenidos al mejor lugar para encontrar lo que te propones!
+            </h1>
+
+            <div class="flex justify-center mt-6">
+                <div class="bg-white rounded-md">
+                    <div class="flex-wrap justify-between md:flex crow">
+
+                    </div>
+                </div>
+            </div>
+
+        <hr class="h-px mt-6 bg-gray-700 border-none">
+        <br>
+
+        <div class="Iconos pl-5"> 
+            <div class=" grid grid-cols-4 gap-4">
+            <a href="https://es-la.facebook.com/"><img src="Iconos/facebook.ico" alt="" height="40px" width="50px">Facebook</a>
+            <a href="https://www.instagram.com/"><img src="Iconos/instagram.ico" alt="" height="40px" width="50px">Instagram</a>
+            <a href="https://www.youtube.com/#!"><img src="Iconos/youtube.ico" alt="" height="40px" width="50px">Youtube</a>
+            <a href="https://es.linkedin.com/"><img src="Iconos/linkedin.ico" alt="" height="40px" width="50px">LinkedIn</a>
+            </div>
+        </div>
+        <div class="cierre">
+            <hr class="h-px mt-6 bg-gray-700 border-none">
+            <br>
+            <div class = "grid grid-cols-3 gap-3 ml-4">
+                <nav><img src="Iconos/telefono.png" alt="" height="20px" width="20px"><p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">0979526068</p></nav>
+                <nav><img src="Iconos/Ubi.png" alt="" height="20px" width="20px"><p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Quito-Pichincha</p></nav>
+                <nav><img src="Iconos/Correo.jpg" alt="" height="20px" width="20px" ><p class="text-xs sm:text-base md:text-lg lg:text-xs xl:text-xs"> empresa@gmail.com</p></nav>
+            </div>
+            <hr class="h-px mt-6 bg-gray-700 border-none">
+            <div class="ml-4 text-center"> Derechos reservados <a href="#">info@cursos.com</a></div>
+            <div class="text-center">Quito - Ecuador </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('[data-collapse-toggle="navbar-default"]').addEventListener('click', function() {
+          var navbar = document.getElementById('navbar-default');
+          navbar.classList.toggle('hidden');
+        });
+    </script>
+    
+</body>
+</html>
